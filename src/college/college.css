@@ -1,0 +1,180 @@
+.gridView{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,45rem);
+    grid-column-gap: 7rem;
+    grid-row-gap: 5rem;
+    justify-content: center;
+  }
+  
+  .gridViewContent{
+      display:grid;
+      grid-template-columns: 70% 30%;
+  }
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 100%;
+    border:1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .container {
+    padding: 2px 16px;
+  }
+  .promotedText{
+    border:1px solid blue;
+    background-color:blue;
+    padding:7px;
+  }
+  .headingText{
+    font-size: 18px;
+    color: #4e4141;
+    margin-bottom: 4px;
+    margin-top: 8px;
+  }
+  .placeText{
+      font-size: 14px;
+  }
+  .matchText{
+    font-size: 13px; 
+    color: #a7a1a1;
+  }
+  .offertxt{
+      font-size: 15px;
+  }
+  .originalPrice{
+    font-size: 12px;
+    color: #a7a1a1;
+    margin-right:4px;
+  }
+  .discountText{
+    border:1px solid red;
+    background-color:red;
+    font-size:12px;
+    color:#fff;
+    padding:1px;
+    font-weight:bold;
+  }
+  .discountedPrice{
+    font-size:25px;
+    font-weight:bold;
+    color:red;
+    margin-top:4px;
+  }
+  .semesterText{
+    font-size:12px !important;
+    color:#a7a1a1;
+    margin-top:2px;
+  }
+  .amentyText{
+    font-size:15px;
+    color:#00c4ff;
+    font-weight:bold;
+  }
+  .tagPlacing{
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    transform: translate(10px,-15px);
+  }
+  .tag{
+    border:1px solid #fff;
+    border-top-left-radius:40px;
+    border-top-right-radius:40px;
+    background-color:#fff;
+    border-bottom-right-radius:40px;
+    border-bottom-left-radius:40px;
+    font-size:16px;
+    padding:8px;
+    margin-right:10px;
+  }
+  .rankingPosition{
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    transform: translate(-10px,-15px);
+  }
+  .rankingText{
+    font-size:12px;
+    text-align:right;
+    font-weight:bold;
+    color:#000;
+  }
+  .ratingPosition{
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    transform: translate(-10px,-15px);
+  }
+  .promotePosition{
+    position: absolute;
+    top: -13px;
+    right: -46px;
+    transform: translate(0px,0px);
+  }
+
+  @media screen and (max-width:850px){
+    .gridView{
+      grid-template-columns: repeat(auto-fill,30rem);
+    }
+    .rankingPosition{
+        bottom: 36px;
+      }
+      .ratingPosition{
+        top: 40px;
+      }
+      .rankingText{
+        text-align:left;
+      }
+}
+@media screen and (max-width:600px){
+  .gridView{
+    grid-template-columns: repeat(auto-fill,25rem);
+  }
+  .rankingPosition{
+    left:15px;
+  }
+  .headingText{
+      font-size: 15px;
+  }
+  .placeText{
+    font-size: 11px;
+}
+.originalPrice{
+    font-size: 9px;
+}
+.matchText{
+    font-size: 10px;
+  }
+  .offertxt{
+    font-size: 12px;
+}
+.discountText{
+    font-size: 9px;
+}
+.discountedPrice{
+    font-size: 17px;
+}
+.semesterText{
+    font-size: 8px !important;
+}
+.amentyText{
+    font-size:10px;
+}
+.promotedText{
+    font-size:10px;
+}
+}
+@media screen and (max-width:500px){
+  .gridView{
+    grid-template-columns: repeat(auto-fill,18rem);
+  }
+  .tag{
+      font-size:10px;
+  }
+}
